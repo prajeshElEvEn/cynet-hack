@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 70vw;
+  margin: 0 auto;
+
+  navbar {
+    // position: fixed;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+
+      .logo {
+        a {
+          color: #fff;
+          text-decoration: none;
+          span {
+            // background: linear-gradient(to bottom right, darkblue, darkorchid);
+            // color: transparent;
+            // -webkit-background-clip: text;
+          }
+        }
+      }
+
+      .register-btn {
+        // background-color: #0067f4;
+        background: linear-gradient(to bottom right, darkblue, darkorchid);
+        padding: 0.4rem 1.6rem;
+        border-radius: 2rem;
+        a {
+          font-weight: 400;
+          font-size: small;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .site-title {
+    cursor: context-menu;
+    margin: 6rem auto;
+    padding: 2rem 0;
+    h3 {
+      color: #8d8d8d;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      span {
+        color: #0067f4;
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 6rem;
+      span {
+        // font-size: 8rem;
+        // color: #0067f4;
+        background: linear-gradient(to bottom right, darkblue, darkorchid);
+        color: transparent;
+        -webkit-background-clip: text;
+      }
+    }
+    h5 {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+    h4 {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 2.8rem;
+      background: linear-gradient(to bottom right, darkblue, darkorchid);
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 50vh;
+    .left-arrow {
+      border: 1px solid gray;
+      width: 10%;
+      height: 600px;
+      border-radius: 1rem 0 0 1rem;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.5);
+      // border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .arrow-icon-left {
+        padding: 0.2rem 0.4rem;
+        border-radius: 2rem;
+        transition: all 0.3s ease-in-out;
+        // background: #000;
+        &:hover {
+          border: 1px solid rgba(255, 255, 255, 0.125);
+          backdrop-filter: blur(16px) saturate(180%);
+          -webkit-backdrop-filter: blur(16px) saturate(180%);
+          background-color: rgba(17, 25, 40, 0.5);
+        }
+        svg {
+          transform: translate(0, 4px);
+        }
+      }
+    }
+    .image {
+      width: 100%;
+      //   border: 1px solid gray;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      height: 600px;
+      background: linear-gradient(
+          270deg,
+          rgba(36, 45, 61, 0.2) 0,
+          rgba(36, 45, 61, 0.8) 100%
+        ),
+        url("../assets/bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .right-arrow {
+      cursor: pointer;
+      border: 1px solid gray;
+      width: 10%;
+      height: 600px;
+      border-radius: 0 1rem 1rem 0;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.5);
+      // border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .arrow-icon-right {
+        padding: 0.2rem 0.4rem;
+        border-radius: 2rem;
+        transition: all 0.3s ease-in-out;
+        // background: #000;
+        &:hover {
+          border: 1px solid rgba(255, 255, 255, 0.125);
+          backdrop-filter: blur(16px) saturate(180%);
+          -webkit-backdrop-filter: blur(16px) saturate(180%);
+          background-color: rgba(17, 25, 40, 0.5);
+        }
+
+        svg {
+          transform: translate(0, 4px);
+        }
+      }
+    }
+  }
+  .featured-events {
+    margin: 6rem auto;
+    padding: 2rem 0;
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      cursor: context-menu;
+    }
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    .card {
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.5);
+      width: 30%;
+      //   height: 400px;
+      .card-body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        gap: 1rem;
+        // justify-content: space-between;
+
+        .card-title {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+        .card-text {
+          font-size: 0.8rem;
+          font-weight: 200;
+        }
+
+        .img1 {
+          background: url("../assets/rdr.jpg");
+          height: 200px;
+          background-size: cover;
+          border-radius: 0.5rem 0.5rem 0 0;
+        }
+        .img2 {
+          background: url("../assets/cod.png");
+          height: 200px;
+          background-size: cover;
+          border-radius: 0.5rem 0.5rem 0 0;
+        }
+        .img3 {
+          background: url("../assets/gta.jpg");
+          height: 200px;
+          background-size: cover;
+          border-radius: 0.5rem 0.5rem 0 0;
+        }
+      }
+    }
+  }
+}
