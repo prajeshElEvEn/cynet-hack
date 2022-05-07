@@ -312,6 +312,71 @@ body {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.container .end-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container .end-card .text {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.container .end-card .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 2rem;
+}
+
+.container .end-card .btns .about {
+  padding: 0.4rem 1.6rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .end-card .btns .about a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container .end-card .btns .about:hover {
+  background: #fff;
+}
+
+.container .end-card .btns .about:hover a {
+  color: #0067f4;
+}
+
+.container .end-card .btns .contact {
+  background: -webkit-gradient(linear, left top, right bottom, from(darkblue), to(darkorchid));
+  background: linear-gradient(to bottom right, darkblue, darkorchid);
+  padding: 0.4rem 1.6rem;
+  border-radius: 2rem;
+}
+
+.container .end-card .btns .contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .container .footer {
   padding: 2rem 0;
   display: -webkit-box;
@@ -341,6 +406,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.container .footer .socials a {
+  color: #8d8d8d;
 }
 
 .container .footer .ftr-txt {

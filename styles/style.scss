@@ -258,6 +258,56 @@ body {
     }
   }
 
+  .end-card {
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.5);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    .text {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 2rem;
+      .about {
+        padding: 0.4rem 1.6rem;
+        border-radius: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0.5);
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: #fff;
+          a {
+            color: #0067f4;
+          }
+        }
+      }
+      .contact {
+        background: linear-gradient(to bottom right, darkblue, darkorchid);
+        padding: 0.4rem 1.6rem;
+        border-radius: 2rem;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
   .footer {
     padding: 2rem 0;
     display: flex;
@@ -272,6 +322,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      a {
+        color: #8d8d8d;
+      }
     }
     .ftr-txt {
       // font-weight: 200;
