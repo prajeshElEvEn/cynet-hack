@@ -47,9 +47,27 @@ body {
   text-decoration: none;
 }
 
+.container .winner {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.9rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  padding: 0.5rem 2rem;
+}
+
+.container .winner a {
+  color: #ffd000;
+}
+
 .container .site-title {
   cursor: context-menu;
-  margin: 6rem auto;
+  margin: 2rem auto;
   padding: 2rem 0;
 }
 
@@ -203,8 +221,25 @@ body {
 .container .featured-events h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 3rem;
   cursor: context-menu;
+}
+
+.container .featured-events .gamelist {
+  margin: 1rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.9rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.5);
+  padding: 0.5rem 2rem;
+}
+
+.container .featured-events .gamelist a {
+  color: #ffd000;
 }
 
 .container .featured-events .card-container {
@@ -227,6 +262,8 @@ body {
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.5);
   width: 30%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .container .featured-events .card .card-body {
@@ -310,6 +347,11 @@ body {
   height: 200px;
   background-size: cover;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.container .featured-events .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .container .end-card {

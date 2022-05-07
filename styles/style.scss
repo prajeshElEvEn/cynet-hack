@@ -51,9 +51,24 @@ body {
     }
   }
 
+  .winner {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.5);
+    padding: 0.5rem 2rem;
+    a {
+      color: #ffd000;
+    }
+  }
+
   .site-title {
     cursor: context-menu;
-    margin: 6rem auto;
+    margin: 2rem auto;
     padding: 2rem 0;
     h3 {
       color: #8d8d8d;
@@ -178,8 +193,22 @@ body {
     h2 {
       text-align: center;
       font-size: 2rem;
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
       cursor: context-menu;
+    }
+    .gamelist {
+      margin: 1rem auto;
+      width: fit-content;
+      font-size: 0.9rem;
+      border-radius: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.5);
+      padding: 0.5rem 2rem;
+      a {
+        color: #ffd000;
+      }
     }
     .card-container {
       display: flex;
@@ -254,6 +283,10 @@ body {
           background-size: cover;
           border-radius: 0.5rem 0.5rem 0 0;
         }
+      }
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-10px);
       }
     }
   }
