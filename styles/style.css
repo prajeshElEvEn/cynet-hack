@@ -251,6 +251,46 @@ body {
   font-weight: 200;
 }
 
+.container .featured-events .card .card-body .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .featured-events .card .card-body .btn .btn-know {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .featured-events .card .card-body .btn .btn-know a {
+  font-size: small;
+  text-decoration: none;
+  color: #0067f4;
+}
+
+.container .featured-events .card .card-body .btn .btn-register {
+  background: -webkit-gradient(linear, left top, right bottom, from(darkblue), to(darkorchid));
+  background: linear-gradient(to bottom right, darkblue, darkorchid);
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+}
+
+.container .featured-events .card .card-body .btn .btn-register a {
+  font-size: small;
+  text-decoration: none;
+  color: #fff;
+}
+
 .container .featured-events .card .card-body .img1 {
   background: url("../assets/rdr.jpg");
   height: 200px;
@@ -270,5 +310,45 @@ body {
   height: 200px;
   background-size: cover;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.container .footer {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .footer .ftr-logo {
+  font-size: 0.8rem;
+  color: #8d8d8d;
+}
+
+.container .footer .socials {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .footer .ftr-txt {
+  font-size: 0.8rem;
+}
+
+.container .footer .ftr-txt a {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

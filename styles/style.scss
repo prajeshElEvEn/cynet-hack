@@ -211,6 +211,30 @@ body {
           font-size: 0.8rem;
           font-weight: 200;
         }
+        .btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .btn-know {
+            display: flex;
+            align-items: center;
+            a {
+              font-size: small;
+              text-decoration: none;
+              color: #0067f4;
+            }
+          }
+          .btn-register {
+            background: linear-gradient(to bottom right, darkblue, darkorchid);
+            padding: 0.2rem 1rem;
+            border-radius: 2rem;
+            a {
+              font-size: small;
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+        }
 
         .img1 {
           background: url("../assets/rdr.jpg");
@@ -230,6 +254,31 @@ body {
           background-size: cover;
           border-radius: 0.5rem 0.5rem 0 0;
         }
+      }
+    }
+  }
+
+  .footer {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .ftr-logo {
+      font-size: 0.8rem;
+      color: #8d8d8d;
+    }
+    .socials {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .ftr-txt {
+      // font-weight: 200;
+      font-size: 0.8rem;
+      a {
+        text-decoration: none;
+        color: #fff;
       }
     }
   }
