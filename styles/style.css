@@ -462,4 +462,71 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 94vw;
+  }
+  .container .winner {
+    font-size: 0.8rem;
+  }
+  .container .site-title h1 {
+    font-size: 4rem;
+  }
+  .container .site-title h5 {
+    font-size: 1.2rem;
+  }
+  .container .site-title h4 {
+    font-size: 1.6rem;
+  }
+  .container .carousel .left-arrow {
+    height: 200px;
+  }
+  .container .carousel .image {
+    height: 200px;
+  }
+  .container .carousel .right-arrow {
+    height: 200px;
+  }
+  .container .featured-events {
+    margin: 2rem auto;
+  }
+  .container .featured-events .gamelist {
+    font-size: 0.8rem;
+  }
+  .container .featured-events .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .featured-events .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .container .end-card .text {
+    font-size: 2rem;
+  }
+  .container .end-card .btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .end-card .btns .about {
+    width: 60%;
+    text-align: center;
+  }
+  .container .end-card .btns .contact {
+    width: 60%;
+    text-align: center;
+  }
+  .container .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
